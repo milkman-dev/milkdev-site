@@ -54,3 +54,15 @@ button:hover {
 button:focus {
     box-shadow: 0 0 0 2px #fbbbad;
 }
+
+.header-container {
+    display: flex;
+    align-items: right;
+    gap: 400px;
+}
+
+.header-icon {
+    height: 250px;
+    width: auto;
+    align-self: center;
+}
