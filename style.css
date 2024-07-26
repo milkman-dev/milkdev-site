@@ -1,3 +1,10 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
+
+/* Base styles */
+
 body {
     background-color: #f7f7f7;
     color: #222323;
@@ -31,7 +38,39 @@ ul {
     font-size: 18px;
 }
 
-button {
+.header-icon {
+    height: 250px;
+    width: auto;
+    align-self: center;
+}
+
+/* Flexbox styles */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.nav-container {
+    display: flex;
+    font-family: 'Fira Code', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.nav-container a {
     font-family: 'Fira Code', sans-serif;
     border: none;
     outline: none;
@@ -42,27 +81,13 @@ button {
     font-weight: bold;
     background-color: #ee8695;
     color: white;
-    transition: background-color 0.3s ease;
-    margin-top: 2%;
-    margin-bottom: 1%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 5px;
 }
-  
-button:hover {
+
+
+.nav-container a:hover {
     background-color: #fbbbad;
-}
-
-button:focus {
-    box-shadow: 0 0 0 2px #fbbbad;
-}
-
-.header-container {
-    display: flex;
-    align-items: right;
-    gap: 400px;
-}
-
-.header-icon {
-    height: 250px;
-    width: auto;
-    align-self: center;
+    box-shadow: 0 0 0 2px #e79d8d;
 }
