@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./media/img/cloud.png) repeat-x 0 0 #fce9e62f;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-position: center;
+  background-attachment: fixed;
+  image-rendering: pixelated;
+  font-family: Roboto, sans-serif;
+  font-size: 11.4px;
+  color: #333;
+  letter-spacing: 0.8px;
+  margin: 0;
+  padding: 0;
+}
+
+#layout {
+  margin: 70px auto;
+  max-width: 800px;
+}
+
+header,
+#navigationbar,
+footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#navigation {
+  background: transparent;
+  padding: 5px;
+}
+
+#navigation a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 10px;
+  font: 12px monospace;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside {
+  width: 400px;
+}
+
+#main-content {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.box {
+  background: #fff;
+  border-radius: 10px;
+  border: 0 solid #ebebeb;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.thubmnail {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.box-title {
+  background: #fde6e1;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#Table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#Table th,
+#Table td {
+  padding: 5px;
+  text-align: left;
+}
+
+#footer {
+  clear: both;
+  padding: 10px;
+}
