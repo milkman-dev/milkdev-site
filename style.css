@@ -1,93 +1,85 @@
-/* Fonts */
-
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
-
-/* Base styles */
-
 body {
-    background-color: #f7f7f7;
-    color: #222323;
-    font-family: 'Fira Code', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+  background: url(./media/img/cloud.png) repeat-x 0 0 #fce9e62f;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-position: center;
+  background-attachment: fixed;
+  image-rendering: pixelated;
+  font-family: Roboto, sans-serif;
+  font-size: 11.4px;
+  color: #6b5b57;
+  letter-spacing: 0.8px;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-    padding-top: 8%;
-    padding-bottom: 8%;
-    font-size: 48px;
-    font-family: 'Press Start 2P', sans-serif;
-    font-weight: 400;
-    font-style: normal;
+#layout {
+  margin: 70px auto;
+  max-width: 800px;
 }
 
-p {
-    font-family: 'Fira Code', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+header,
+#navigationbar,
+footer {
+  margin: 0 auto;
+  text-align: center;
 }
 
-ul {
-    font-family: 'Fira Code', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+#navigation {
+  background: transparent;
+  padding: 5px;
 }
 
-.header-icon {
-    height: 250px;
-    width: auto;
-    align-self: center;
+#navigation a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 10px;
+  font: 12px monospace;
 }
 
-/* Flexbox styles */
-
-.container {
-    display: flex;
-    justify-content: space-evenly;
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-    width: 80%;
-    margin: auto;
+aside {
+  width: 400px;
 }
 
-.nav-container {
-    display: flex;
-    font-family: 'Fira Code', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
+#main-content {
+  flex-grow: 1;
+  margin: 0 10px;
 }
 
-.nav-container a {
-    font-family: 'Fira Code', sans-serif;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #ee8695;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin: 0 5px;
+.box {
+  background: #fff;
+  border-radius: 10px;
+  border: 0 solid #ebebeb;
+  margin: 5px 0;
+  padding: 10px;
 }
 
+.box-title {
+  background: #FFDAD9;
+  border-radius: 10px;
+  padding: 7px;
+  text-align: center;
+  margin: 10px 0;
+}
 
-.nav-container a:hover {
-    background-color: #fbbbad;
-    box-shadow: 0 0 0 2px #e79d8d;
+#Table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#Table th,
+#Table td {
+  padding: 5px;
+  text-align: left;
+}
+
+#footer {
+  clear: both;
+  padding: 10px;
 }
