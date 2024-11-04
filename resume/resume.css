@@ -14,10 +14,9 @@ body {
     image-rendering: pixelated;
 }
 
-/* Layout */
 #content-resume {
     display: grid;
-    grid-template-columns: 1fr 240px;
+    grid-template-columns: 1fr 220px;
     gap: var(--l);
 }
 
@@ -45,7 +44,7 @@ body {
 
 .experience-item {
     padding: var(--m) 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .experience-item:last-child {
