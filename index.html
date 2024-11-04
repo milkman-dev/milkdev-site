@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>(˶ ^ ᵕ ^ ˶)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -15,14 +16,18 @@
       <aside class="sidebar">
         <div class="box">
           <div class="box-title">Hi there!</div>
-          <img class="pixelated rounded-s" src="./media/img/koi.gif" width="180" alt="Animated koi" />
+          <div class="content-wrapper">
+            <img class="pixelated rounded-s" src="./media/img/koi.gif" width="180" alt="Animated koi" />
+          </div>
         </div>
 
         <div class="box">
           <div class="box-title">Portfolio</div>
-          <ul class="nav-list">
-            <li><a href="https://github.com/milkman-dev/100daysofcode">100 Days Of Code</a></li>
-          </ul>
+          <div class="content-wrapper">
+            <ul class="nav-list">
+              <li><a href="https://github.com/milkman-dev/100daysofcode">100 Days Of Code</a></li>
+            </ul>
+          </div>
         </div>
       </aside>
 
@@ -30,21 +35,23 @@
       <div id="main-content">
         <div class="box">
           <div class="box-title">My name is Logan</div>
-          <p class="text-center">Welcome to my little corner of the internet</p>
-          <p>
-            I'm lifelong learner with passion for building things from scratch
-            and solving problems. I enjoy a minimal and simple lifestyle,
-            always striving to refine my discipline and improve a bit
-            everyday.
-          </p>
+          <div class="content-wrapper">
+            <p class="text-center">Welcome to my little corner of the internet</p>
+            <p>
+              I'm lifelong learner with passion for building things from scratch
+              and solving problems. I enjoy a minimal and simple lifestyle,
+              always striving to refine my discipline and improve a bit
+              everyday.
+            </p>
 
-          <p>Here is a bit about me, I'm a:</p>
-          <ul class="nav-list">
-            <li>Project Manager</li>
-            <li>Back-end Developer</li>
-            <li>Game Developer</li>
-            <li>Rock Climber</li>
-          </ul>
+            <p>Here is a bit about me, I'm a:</p>
+            <ul class="nav-list">
+              <li>Project Manager</li>
+              <li>Back-end Developer</li>
+              <li>Game Developer</li>
+              <li>Rock Climber</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -52,15 +59,19 @@
       <aside class="sidebar">
         <div class="box">
           <div class="box-title">Jump anywhere</div>
-          <nav>
-            <a href="./index.html" class="nav-button">Home</a>
-            <a href="./resume/resume.html" class="nav-button">Resume</a>
-            <a href="./blog-entries/blog-home.html" class="nav-button">Blog</a>
-          </nav>
+          <div class="content-wrapper">
+            <nav>
+              <a href="./index.html" class="nav-button">Home</a>
+              <a href="./resume/resume.html" class="nav-button">Resume</a>
+              <a href="./blog-entries/blog-home.html" class="nav-button">Blog</a>
+            </nav>
+          </div>
         </div>
 
         <div class="box">
-          <img src="./media/img/little-boi-side.gif" alt="Decorative animation" class="pixelated rounded-s" />
+          <div class="content-wrapper">
+            <img src="./media/img/little-boi-side.gif" alt="Decorative animation" class="pixelated rounded-s" />
+          </div>
         </div>
       </aside>
     </main>
@@ -69,6 +80,9 @@
       <div>milkdev ©2024 - made with ❤️</div>
     </footer>
   </div>
+
+  <button class="theme-switcher" onclick="toggleTheme()">🌓</button>
+  <script src="./theme.js"></script>
 </body>
 
 </html>
