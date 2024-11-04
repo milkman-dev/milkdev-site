@@ -2,11 +2,11 @@ function setBackgroundImage(theme, isResumePage) {
     const basePath = isResumePage ? '../' : './';
     const config = {
         dark: {
-            image: `${basePath}media/img/cloud-dark.png`,
+            image: `${basePath}res/img/cloud-dark.png`,
             backgroundColor: '#2D3748'
         },
         light: {
-            image: `${basePath}media/img/cloud-light.png`,
+            image: `${basePath}res/img/cloud-light.png`,
             backgroundColor: 'var(--light-bg)'
         }
     };

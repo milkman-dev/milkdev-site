@@ -47,10 +47,10 @@
   --current-link: var(--light-link);
   --current-gradient: linear-gradient(to bottom right, var(--light-pink), var(--light-accent-pink));
 
-  --bg-base-light: url(./media/img/cloud-light.png);
-  --bg-overlay-light: url(./media/img/cloud-light-2.png);
-  --bg-base-dark: url(./media/img/cloud-dark.png);
-  --bg-overlay-dark: url(./media/img/cloud-dark-2.png);
+  --bg-base-light: url("../res/img/cloud-light.png");
+  --bg-overlay-light: url("../res/img/cloud-light-2.png");
+  --bg-base-dark: url("../res/img/cloud-dark.png");
+  --bg-overlay-dark: url("../res/img/cloud-dark-2.png");
 }
 
 [data-theme="dark"] {
@@ -63,15 +63,7 @@
   --current-accent: var(--dark-text-role);
   --current-link: var(--dark-link);
   --current-gradient: rgba(45, 55, 72, 0.95);
-}
-
-[data-theme="dark"] body {
-  background-image: var(--bg-base-dark);
-  background-color: #2D3748;
-}
-
-[data-theme="dark"] body:after {
-  background-image: var(--bg-overlay-dark);
+  image-rendering: pixelated;
 }
 
 body {
@@ -82,9 +74,12 @@ body {
   color: var(--current-text);
   background-color: var(--current-bg);
   background-image: var(--bg-base-light);
+  background-repeat: no-repeat;
+  background-position: center fixed;
   background-size: cover;
   background-attachment: fixed;
   transition: var(--transition);
+  image-rendering: pixelated;
 }
 
 body:after {
@@ -92,11 +87,30 @@ body:after {
   position: fixed;
   inset: 0;
   background-image: var(--bg-overlay-light);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
   opacity: 1;
   transition: opacity var(--transition);
+  image-rendering: pixelated;
+}
+
+[data-theme="dark"] body {
+  background-image: var(--bg-base-dark);
+  background-color: #2D3748;
+  background-repeat: no-repeat;
+  background-position: center fixed;
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+[data-theme="dark"] body:after {
+  background-image: var(--bg-overlay-dark);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
 }
 
 #layout {
