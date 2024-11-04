@@ -123,7 +123,7 @@ body:after {
   background: var(--current-box-bg);
   border-radius: var(--m);
   padding: var(--m);
-  margin-bottom: var(--l);
+  margin-bottom: var(--m);
   transition: var(--transition);
 }
 
@@ -132,19 +132,9 @@ body:after {
   color: var(--current-text-title);
   border-radius: var(--s);
   padding: var(--xs) var(--s);
-  margin-bottom: var(--l);
+  margin-bottom: var(--s);
   text-align: center;
   transition: var(--transition);
-}
-
-.resume-nav .box,
-.sidebar .box {
-  padding: var(--s);
-}
-
-.resume-nav .box .content-wrapper,
-.sidebar .box nav {
-  padding: var(--xs);
 }
 
 #main-content .box .content-wrapper,
@@ -184,10 +174,9 @@ body:after {
 
 .nav-button {
   display: block;
-  width: calc(100% - var(--m));
   background: var(--light-mauve);
-  padding: var(--xs) var(--s);
-  margin: 0 auto var(--xs) auto;
+  padding: var(--xs) var(--m);
+  margin-bottom: var(--xs);
   border-radius: var(--s);
   color: var(--light-deep-purple);
   font-weight: 500;
