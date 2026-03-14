@@ -3,9 +3,9 @@
    Spanish: no punctuation except commas, keep ñ. */
 const translations = {
   es: {
-    'welcome':         'bienvenido a mi pequeño rincon de internet',
-    'intro':           'soy un aprendiz de por vida con pasion por construir cosas desde cero y resolver problemas, disfruto un estilo de vida minimo y simple, siempre afinando disciplina y mejorando un poco cada dia',
-    'about-me':        'un poco sobre mi, soy:',
+    'welcome': 'Bienvenido a mi rincon de internet',
+    'intro': 'Me gusta aprender y tengo pasion por construir cosas desde cero y resolver problemas, me gusta el estilo de vida minimal y tranquilo, siempre intento mantener mi disciplina y mejorar un poco cada dia',
+    'about-me': 'Algunos factos sobre mi, soy:',
   }
 };
 
@@ -31,7 +31,7 @@ var postBodies = {
     'getting-aws-certified': '<p>Pase el examen de AWS cloud practitioner la semana pasada, el basico, me tomo como seis semanas de estudio junto con todo lo demas y me alegra haberlo hecho</p><p>La razon por la que lo queria no es porque planeo volverme cloud engineer, es porque creo que entender infraestructura es una de esas bases que va a importar mas mientras todo lo demas se automatiza, no menos</p><p>Esto de que la IA reemplace codigo, aunque al final escriba todo, el codigo igual tiene que correr en algun lado, necesita un servidor, una base de datos, una red, una forma de escalar cuando el trafico pica, una forma de recuperarse cuando algo falla, nada de eso desaparece porque el codigo fue generado en vez de escrito a mano</p><p>La capa de cloud es la parte interesante porque no esta claro cuanto puede reemplazar la IA, puedes imaginarla eligiendo el tipo de instancia correcto o escribiendo el terraform, pero las decisiones de arquitectura, de tradeoffs entre costo y performance y confiabilidad, esas se sienten como que siguen necesitando un humano que entienda el contexto real de que estas construyendo y por que</p><p>Tal vez me equivoco y en unos años la IA maneja todo tambien, pero no creo, creo que la infraestructura en la nube es una de esas areas donde las consecuencias de equivocarse son lo bastante significativas como para que los humanos se queden en el loop por mucho tiempo</p><p>Recomendaria la cert de cloud practitioner a cualquiera que trabaje en software o producto o algo cercano, no se trata de volverte especialista devops, se trata de entender el ambiente donde tu software vive de verdad, y ese entendimiento sirve sin importar que mas cambie</p>',
     'learning-ai-before-you-get-left-behind': '<p>He estado pensando como decir esto sin sonar como cada post de linkedin de 2023, tenganme paciencia</p><p>El hype alrededor de la IA hizo que se sienta como algo que o agarras o pierdes, como un tren que ya se fue, pero la tecnologia solo ha sido genuinamente accesible y util para el trabajo diario por unos dos años, los modelos que de verdad hacen algo util son mas jovenes que la mayoria de los side projects que he abandonado</p><p>Eso significa que la ventana para construir bases reales sigue abierta, la gente que entiende como funcionan estos modelos, para que son buenos y para que no, como trabajar bien con ellos y cuando no, esa gente va a ser mas util que los que solo usan las herramientas sin entenderlas</p><p>No hablo de volverte investigador de IA, hablo de entender lo basico, que hace un transformer conceptualmente, que son los embeddings, por que importan las ventanas de contexto, como funciona el prompting por dentro, esto se puede aprender en semanas no años y los recursos estan por todos lados</p><p>La urgencia es real igual, no porque la IA te vaya a reemplazar directo sino porque alguien que entienda la IA y la use bien lo va a hacer, y esa distincion importa mucho, es lo mismo que paso con internet y luego con mobile y ahora con esto</p><p>Empieza ya, genuinamente no es tarde, pero tampoco va a ser verdad para siempre y la ventana es mas chica que hace seis meses</p>',
     'my-first-trip-to-japan': '<p>Vole a japon solo la semana pasada, no lo habia planeado con tanto tiempo, solo compre el boleto cuando tuve unos dias libres y necesitaba estar en un lugar que no fuera mi departamento ni mi oficina</p><p>Lo primero que me pego fue el silencio, no la ausencia de ruido exactamente, solo la ausencia de ruido social, nadie actuando, nadie tratando de captar tu atencion, todo funciona y nadie le da vuelta</p><p>Creo que la razon por la que japon es el lugar perfecto cuando estas con burnout es que el ambiente hace todo el trabajo por ti, no tienes que tomar muchas decisiones, los trenes te dicen a donde ir, el konbini tiene todo lo que necesitas a las 2am, la comida es buena en todos lados no solo en los lugares caros</p><p>Pase mucho tiempo solo caminando, que no habia hecho en meses en casa, caminar sin destino y sin el telefono en la mano, suena a nada pero creo que lo necesitaba mas de lo que pensaba</p><p>Hay algo de estar en un lugar donde no hablas el idioma que es profundamente reparador, no puedes escuchar conversaciones ajenas, no te puedes dejar llevar por la urgencia de otros, estas ahi dentro de tu propia cabeza de una forma que es dificil de acceder en casa</p><p>Regrese con ganas de arreglar las cosas en vez de solo aguantarlas, no se explicarlo del todo pero es cierto, si estas con burnout y tienes alguna forma de ir, ve</p>'
-}
+  }
 };
 
 function applyPostBody(lang) {
@@ -49,7 +49,7 @@ function applyPostBody(lang) {
 }
 
 function applyTranslations(lang) {
-  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+  document.querySelectorAll('[data-i18n]').forEach(function (el) {
     var key = el.dataset.i18n;
     if (lang === 'es') {
       if (!englishCache[key]) {
