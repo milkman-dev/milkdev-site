@@ -2,29 +2,146 @@
 <html lang="en">
 
 <head>
-    <title>Hi! Welcome</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-
+    <title>Blog — milkdev</title>
+    <meta name="description" content="Logan's blog — thoughts on development, project management, and life." />
+    <meta property="og:title" content="Blog — milkdev" />
+    <meta property="og:description" content="Logan's blog — thoughts on development, project management, and life." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://milkmandev.com/web/blog/blog-home.html" />
+    <link rel="icon" href="../../res/img/milkmandev-avatar.ico" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div id="layout">
+        <main id="content-resume">
+            <!-- Main Column -->
+            <div class="resume-content">
+                <div class="box">
+                    <div class="box-title" data-i18n="blog-title">Milk Archives</div>
+                    <div class="content-wrapper">
 
-    <nav class="nav-container">
-        <a href="../index.html">Home</a>
-        <a href="./blog-entries/blog-home.html">Blog</a>
-        <a href="../projects.html">Portfolio</a>
-    </nav>
+                        <!-- To add a new post:
+                             1. Create web/blog/posts/your-post.html (copy any post as a template)
+                             2. Add data-i18n attributes on nav/footer elements and include js/lang.js script
+                             3. Add a new <li> entry below under the correct year
+                             4. If it's a new year, copy a whole <div class="archive-section"> block -->
 
-    <hr />
+                        <div class="archive-section">
+                            <h2 class="archive-year-heading">2026</h2>
+                            <ul class="archive-post-list">
+                                <li class="archive-post-item">
+                                    <a href="./posts/one-month-with-cli-ai-tools.html" class="archive-post-title">one month with CLI AI tools</a>
+                                    <span class="archive-post-date">08 Feb</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/learning-ai-before-you-get-left-behind.html" class="archive-post-title">learning AI before you get left behind</a>
+                                    <span class="archive-post-date">20 Jan</span>
+                                </li>
+                            </ul>
+                        </div>
 
-    <h1>WIP</h1>
+                        <div class="archive-section">
+                            <h2 class="archive-year-heading">2025</h2>
+                            <ul class="archive-post-list">
+                                <li class="archive-post-item">
+                                    <a href="./posts/two-years-of-writing-here.html" class="archive-post-title">two years of writing here</a>
+                                    <span class="archive-post-date">28 Dec</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/getting-aws-certified.html" class="archive-post-title">getting AWS certified</a>
+                                    <span class="archive-post-date">03 Sep</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/rock-climbing-and-problem-solving.html" class="archive-post-title">rock climbing and problem solving</a>
+                                    <span class="archive-post-date">18 Jun</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/slow-progress-is-still-progress.html" class="archive-post-title">slow progress is still progress</a>
+                                    <span class="archive-post-date">02 Apr</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/my-first-trip-to-japan.html" class="archive-post-title">my first trip to japan</a>
+                                    <span class="archive-post-date">14 Feb</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/hello-world.html" class="archive-post-title">hello, world</a>
+                                    <span class="archive-post-date">15 Jan</span>
+                                </li>
+                            </ul>
+                        </div>
 
-    <p><br /></p>
+                        <div class="archive-section">
+                            <h2 class="archive-year-heading">2024</h2>
+                            <ul class="archive-post-list">
+                                <li class="archive-post-item">
+                                    <a href="./posts/before-the-year-ends.html" class="archive-post-title">before the year ends</a>
+                                    <span class="archive-post-date">28 Dec</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/seven-years-of-work.html" class="archive-post-title">seven years of work</a>
+                                    <span class="archive-post-date">14 Nov</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/on-shipping-something-that-works.html" class="archive-post-title">on shipping something that works</a>
+                                    <span class="archive-post-date">20 Sep</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/burnout.html" class="archive-post-title">burnout</a>
+                                    <span class="archive-post-date">17 Jul</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/on-being-a-pm-who-wants-to-code.html" class="archive-post-title">on being a pm who wants to code</a>
+                                    <span class="archive-post-date">03 Jun</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/the-side-project-graveyard.html" class="archive-post-title">the side project graveyard</a>
+                                    <span class="archive-post-date">10 May</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/ai-broke-my-motivation.html" class="archive-post-title">ai broke my motivation to code</a>
+                                    <span class="archive-post-date">22 Apr</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/barely-talk-to-my-friends-anymore.html" class="archive-post-title">barely talk to my friends anymore</a>
+                                    <span class="archive-post-date">15 Mar</span>
+                                </li>
+                                <li class="archive-post-item">
+                                    <a href="./posts/why-you-should-learn-sql.html" class="archive-post-title">why you should learn sql already</a>
+                                    <span class="archive-post-date">28 Feb</span>
+                                </li>
+                            </ul>
+                        </div>
 
-    <hr />
+                    </div>
+                </div>
+            </div>
 
+            <!-- Right Column -->
+            <aside class="resume-nav" aria-label="Site navigation">
+                <div class="box">
+                    <div class="box-title" data-i18n="nav-title">Jump anywhere</div>
+                    <nav>
+                        <a href="../../index.html" class="nav-button" data-i18n="nav-home">Home</a>
+                        <a href="../resume.html" class="nav-button" data-i18n="nav-resume">Resume</a>
+                        <a href="./blog-home.html" class="nav-button" data-i18n="nav-archives">Milk Archives</a>
+                    </nav>
+                </div>
+            </aside>
+        </main>
+
+        <footer id="footer" class="text-center">
+            <div data-i18n="footer">milkdev ©2024 - made with ❤️</div>
+        </footer>
+    </div>
+
+    <button class="lang-switcher" onclick="toggleLang()" aria-label="Switch language">ES</button>
+    <button class="theme-switcher" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
+    <script src="../../js/theme.js"></script>
+    <script src="../../js/lang.js"></script>
 </body>
 
 </html>

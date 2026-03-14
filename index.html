@@ -4,8 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>(˶ ^ ᵕ ^ ˶)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>milkdev</title>
+  <meta name="description" content="Logan's personal corner of the internet — Project Manager, Back-end Developer, and Game Developer." />
+  <meta property="og:title" content="milkdev" />
+  <meta property="og:description" content="Logan's personal corner of the internet — Project Manager, Back-end Developer, and Game Developer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://milkmandev.com/" />
+  <link rel="icon" href="./res/img/milkmandev-avatar.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -13,20 +19,20 @@
   <div id="layout">
     <main id="content">
       <!-- Left Column -->
-      <aside class="sidebar">
+      <aside class="sidebar" aria-label="Portfolio links">
         <div class="box">
-          <div class="box-title">Hi there!</div>
+          <div class="box-title" data-i18n="hi-there">Hi there!</div>
           <div class="content-wrapper">
             <img class="pixelated rounded-s" src="res/img/koi.gif" width="180" alt="Animated koi" />
           </div>
         </div>
 
         <div class="box">
-          <div class="box-title">Portfolio</div>
+          <div class="box-title" data-i18n="portfolio">Portfolio</div>
           <div class="content-wrapper">
             <ul class="nav-list">
-              <li><a href="https://github.com/milkman-dev/100daysofcode">100 Days Of Code</a></li>
-              <li><a href="https://github.com/milkman-dev/milkdev-site">This website!</a></li>
+              <li><a href="https://github.com/milkman-dev/100daysofcode" data-i18n="portfolio-100">100 Days Of Code</a></li>
+              <li><a href="https://github.com/milkman-dev/milkdev-site" data-i18n="portfolio-site">This website!</a></li>
             </ul>
           </div>
         </div>
@@ -35,36 +41,36 @@
       <!-- Main Column -->
       <div id="main-content">
         <div class="box">
-          <div class="box-title">My name is Logan</div>
+          <div class="box-title" data-i18n="my-name">My name is Logan</div>
           <div class="content-wrapper">
-            <p class="text-center">Welcome to my little corner of the internet</p>
-            <p>
+            <p class="text-center" data-i18n="welcome">Welcome to my little corner of the internet</p>
+            <p data-i18n="intro">
               I'm lifelong learner with passion for building things from scratch
               and solving problems. I enjoy a minimal and simple lifestyle,
               always striving to refine my discipline and improve a bit
               everyday.
             </p>
 
-            <p>Here is a bit about me, I'm a:</p>
+            <p data-i18n="about-me">Here is a bit about me, I'm a:</p>
             <ul class="nav-list">
-              <li>Project Manager</li>
-              <li>Back-end Developer</li>
-              <li>Game Developer</li>
-              <li>Rock Climber</li>
+              <li data-i18n="role-pm">Project Manager</li>
+              <li data-i18n="role-backend">Back-end Developer</li>
+              <li data-i18n="role-game">Game Developer</li>
+              <li data-i18n="role-climber">Rock Climber</li>
             </ul>
           </div>
         </div>
       </div>
 
       <!-- Right Column -->
-      <aside class="sidebar">
+      <aside class="sidebar" aria-label="Site navigation">
         <div class="box">
-          <div class="box-title">Jump anywhere</div>
+          <div class="box-title" data-i18n="nav-title">Jump anywhere</div>
           <div class="content-wrapper">
             <nav>
-              <a href="./index.html" class="nav-button">Home</a>
-              <a href="./web/resume.html" class="nav-button">Resume</a>
-              <a href="./web/blog/blog-home.html" class="nav-button">Blog</a>
+              <a href="./index.html" class="nav-button" data-i18n="nav-home">Home</a>
+              <a href="./web/resume.html" class="nav-button" data-i18n="nav-resume">Resume</a>
+              <a href="./web/blog/blog-home.html" class="nav-button" data-i18n="nav-archives">Milk Archives</a>
             </nav>
           </div>
         </div>
@@ -78,12 +84,14 @@
     </main>
 
     <footer id="footer" class="text-center">
-      <div>milkdev ©2024 - made with ❤️</div>
+      <div data-i18n="footer">milkdev ©2024 - made with ❤️</div>
     </footer>
   </div>
 
-  <button class="theme-switcher" onclick="toggleTheme()">🌓</button>
+  <button class="lang-switcher" onclick="toggleLang()" aria-label="Switch language">ES</button>
+  <button class="theme-switcher" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
   <script src="./js/theme.js"></script>
+  <script src="./js/lang.js"></script>
 </body>
 
 </html>
