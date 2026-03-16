@@ -25,7 +25,7 @@
         <div class="box">
           <div class="box-title" data-i18n="hi-there">Hi there!</div>
           <div class="content-wrapper">
-            <img class="pixelated rounded-s" src="res/img/koi.gif" width="180" alt="Animated koi" />
+            <img class="pixelated rounded-s koi-trigger" src="res/img/koi.gif" width="180" alt="Animated koi" onclick="openKoiOverlay()" />
           </div>
         </div>
 
@@ -92,10 +92,33 @@
     </footer>
   </div>
 
+  <!-- Koi Overlay -->
+  <div id="koi-overlay" onclick="closeKoiOverlay()">
+    <div id="koi-overlay-content" onclick="event.stopPropagation()">
+      <img src="./res/img/koi-full.gif" alt="Koi full animation" class="pixelated" />
+      <audio id="koi-audio" src="./res/img/Moseni_fog.ogg" loop></audio>
+    </div>
+  </div>
+
   <button class="lang-switcher" onclick="toggleLang()" aria-label="Switch language">ES</button>
   <button class="theme-switcher" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
   <script src="./js/theme.js"></script>
   <script src="./js/lang.js"></script>
+  <script>
+    function openKoiOverlay() {
+      document.getElementById('koi-overlay').classList.add('active');
+      document.getElementById('koi-audio').play();
+    }
+    function closeKoiOverlay() {
+      document.getElementById('koi-overlay').classList.remove('active');
+      var audio = document.getElementById('koi-audio');
+      audio.pause();
+      audio.currentTime = 0;
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeKoiOverlay();
+    });
+  </script>
 </body>
 
 </html>

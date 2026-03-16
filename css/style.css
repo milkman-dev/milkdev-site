@@ -414,6 +414,43 @@ body:after {
   opacity: 0.8;
 }
 
+/* ── Koi Overlay ─────────────────────────────────────── */
+
+.koi-trigger {
+  cursor: pointer;
+}
+
+#koi-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: rgba(8, 22, 28, 0.72);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  align-items: center;
+  justify-content: center;
+}
+
+#koi-overlay.active {
+  display: flex;
+}
+
+#koi-overlay-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#koi-overlay-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+  image-rendering: pixelated;
+  border-radius: var(--m);
+}
+
+
 /* ── Responsive ─────────────────────────────────────── */
 
 @media (max-width: 1024px) {
