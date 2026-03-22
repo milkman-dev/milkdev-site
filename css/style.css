@@ -18,7 +18,7 @@
   --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   --light-bg: #FCE9E62F;
-  --light-white: #FFFFFF;
+  --light-white: rgba(255, 255, 255, 0.55);
   --light-pink: #FFD0D6;
   --light-mauve: #E2D4E7;
   --light-deep-purple: #5D4E6D;
@@ -33,7 +33,7 @@
   --dark-text-role: #CBD5E0;
   --dark-text-secondary: #A0AEC0;
   --dark-text-muted: #718096;
-  --dark-box-bg: rgba(26, 32, 44, 0.95);
+  --dark-box-bg: rgba(26, 32, 44, 0.55);
   --dark-bg: #1A202C;
   --dark-link: #FFE5B4;
 
@@ -141,7 +141,16 @@ body:after {
   border-radius: var(--m);
   padding: var(--m);
   margin-bottom: var(--m);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px) saturate(1.2);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   transition: var(--transition);
+}
+
+[data-theme="dark"] .box {
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .box-title {
@@ -217,7 +226,7 @@ body:after {
   width: 35px;
   height: 35px;
   background: var(--current-box-bg);
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -225,6 +234,8 @@ body:after {
   justify-content: center;
   font-size: 20px;
   box-shadow: var(--shadow-md);
+  backdrop-filter: blur(12px) saturate(1.2);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2);
   color: var(--current-text);
   transition: var(--transition);
 }
@@ -237,7 +248,7 @@ body:after {
   width: 35px;
   height: 35px;
   background: var(--current-box-bg);
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -247,6 +258,8 @@ body:after {
   font-weight: 600;
   font-family: 'DM Sans', sans-serif;
   box-shadow: var(--shadow-md);
+  backdrop-filter: blur(12px) saturate(1.2);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2);
   color: var(--current-text);
   transition: var(--transition);
 }
