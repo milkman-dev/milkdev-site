@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — milkdev</title>
+  <meta name="description" content="Logan's professional experience — Project Manager and Software Engineer." />
+  <meta property="og:title" content="Resume — milkdev" />
+  <meta property="og:description" content="Logan's professional experience — Project Manager and Software Engineer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://milkmandev.com/resume.html" />
+  <link rel="icon" href="./res/img/milkmandev-avatar.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <a href="index.html" class="name">milkmandev</a>
+  </header>
+
+  <nav>
+    <a href="index.html">home</a>
+    <a href="resume.html" class="active">resume</a>
+    <a href="notes.html">notes</a>
+    <hr>
+    <a href="https://github.com/milkman-dev" target="_blank" rel="noopener">github</a>
+  </nav>
+
+  <main>
+    <div class="label reveal">experience</div>
+    <div class="exp-list reveal">
+
+      <div class="exp-entry">
+        <div class="exp-dates">2024 – present</div>
+        <div>
+          <div class="exp-company">Stori Card</div>
+          <div class="exp-role">Project Manager</div>
+          <p class="exp-desc">Running payments and core banking projects from start to finish — scoping, aligning with engineering, and seeing things through post-launch.</p>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-dates">2024 – present</div>
+        <div>
+          <div class="exp-company">Stori Card</div>
+          <div class="exp-role">Software Engineer I</div>
+          <p class="exp-desc">Part-time engineering role alongside PM work, mostly back-end.</p>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-dates">2022 – 2024</div>
+        <div>
+          <div class="exp-company">Stori Card</div>
+          <div class="exp-role">Project Coordinator</div>
+          <p class="exp-desc">Kept engineering, design, and business teams aligned on product initiatives and moving at a reasonable pace.</p>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-dates">2021 – 2022</div>
+        <div>
+          <div class="exp-company">Konfío</div>
+          <div class="exp-role">Associate Product Manager</div>
+          <p class="exp-desc">Dug into customer feedback and sales data to find where products were falling short. Helped ship two new products from zero.</p>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-dates">2020 – 2021</div>
+        <div>
+          <div class="exp-company">Konfío</div>
+          <div class="exp-role">Sales Operations Specialist</div>
+          <p class="exp-desc">Onboarded new hires and BPO teams, analyzed sales performance, and built programs to get the whole org better at selling.</p>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-dates">2019 – 2020</div>
+        <div>
+          <div class="exp-company">Gestionix (acq. Konfío)</div>
+          <div class="exp-role">Customer Success Analyst</div>
+          <p class="exp-desc">Handled ERP implementations for businesses across Mexico. Learned a lot about how software actually lands in the real world.</p>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-dates">2018 – 2019</div>
+        <div>
+          <div class="exp-company">Specialized Bicycle Components</div>
+          <div class="exp-role">Sales Specialist</div>
+          <p class="exp-desc">Trained staff, ran events, and rolled out new sales tools to help the store perform better.</p>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-dates">2017 – 2018</div>
+        <div>
+          <div class="exp-company">Specialized Bicycle Components</div>
+          <div class="exp-role">Mechanical Technician</div>
+          <p class="exp-desc">Fixed bikes. Complex repairs, tight deadlines, zero shortcuts.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</div>
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
